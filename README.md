@@ -6,7 +6,7 @@ Opinionated base app.
 
 By default, the dependencies and conventions are:
 
-- ruby 2.0+
+- ruby 2.6+
 - bundler
 - postgresql
 - imagemagick (for image processing)
@@ -19,8 +19,8 @@ You do not have to use them all but will need to update the project yourself.
 
 ### Project
 
-- rails 4
-- ruby 2
+- rails 5.2+
+- ruby 2.6+
 - use binstubs (bundle binstub name_of_the_gem_bin)
 - dotenv
 
@@ -65,7 +65,7 @@ You do not have to use them all but will need to update the project yourself.
 
 ### Clone the project
 
-    git clone https://github.com/midu/rails_template your_project /path/to/new/project
+    git clone https://github.com/azakharko/rails_template your_project /path/to/new/project
     cd /path/to/new/project/
 
 ### Update names
