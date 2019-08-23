@@ -21,3 +21,5 @@
 /public/uploads
 .env
 dump.rdb
+
+/.idea

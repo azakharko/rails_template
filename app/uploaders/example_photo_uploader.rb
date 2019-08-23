@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class ExamplePhotoUploader < CarrierWave::Uploader::Base
-  include ::CarrierWave::Backgrounder::Delay
+  include CarrierWave::Backgrounder::DelayStorage
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick

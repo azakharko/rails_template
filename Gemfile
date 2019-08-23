@@ -18,7 +18,6 @@ gem 'redis-objects'
 
 # Assets:
 gem 'sass-rails'
-gem 'compass-rails'
 
 # Account:
 gem 'devise'
@@ -28,8 +27,9 @@ gem 'simple_form'
 # File Processing
 gem 'sinatra'
 gem 'sidekiq'
-gem 'fog'
 gem 'mini_magick'
+gem 'carrierwave', '~> 2.0'
+gem 'carrierwave_backgrounder'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -38,7 +38,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'steak'
   gem 'launchy'
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_bot_rails'
   gem 'rubocop', require: true
   gem 'rubocop-rails', require: true
   gem 'rubocop-rspec', require: true
