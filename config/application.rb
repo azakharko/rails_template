@@ -29,7 +29,5 @@ module RailsTemplate
     config.paths.add('lib', eager_load: true)
     config.time_zone = 'UTC'
     config.active_record.default_timezone = :utc
-
-    # config.assets.precompile += %w( home.css.scss )
   end
 end

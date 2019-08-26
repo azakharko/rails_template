@@ -9,6 +9,10 @@ class ExamplePhotosController < ApplicationController
     end
   end
 
+  def show
+
+  end
+
   protected
 
   def photo_params
