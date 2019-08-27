@@ -1,4 +1,7 @@
 class ExamplePhotosController < ApplicationController
+
+  before_action :authenticate_user!
+
   def create
     @example_photo = ExamplePhoto.new(photo_params)
 

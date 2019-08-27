@@ -8,5 +8,6 @@ RailsTemplate::Application.routes.draw do
   resources :example_photos
 
   mount Sidekiq::Web => '/sidekiq'
-  root to: 'home#hello'
+
+  root to: 'home#index'
 end

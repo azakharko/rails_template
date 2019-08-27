@@ -1,39 +1,37 @@
 <!doctype html>
 <html lang="en" class="h-100">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width" />
-  <title>RailsTemplate</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RailsTemplate</title>
 
-  <%= stylesheet_link_tag    'application' %>
-  <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application' %>
+    <%= javascript_include_tag 'application' %>
 
-  <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
 
-</head>
-<body class="d-flex flex-column h-100">
-  <div id="flash-messages">
-    <% if notice %>
-      <p class="notice alert-box"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-box"><%= alert %></p>
-    <% end %>
-  </div>
-
-  <%= render 'layouts/top_bar' %>
-
-  <%= render 'layouts/header' %>
-
-  <section id="main" role="main">
-    <div class="container">
-      <div class="large-12 columns">
-        <%= yield %>
-      </div>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="flash-messages">
+      <% if notice %>
+        <p class="notice alert-box"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-box"><%= alert %></p>
+      <% end %>
     </div>
-  </section>
 
-  <%= render 'layouts/footer' %>
-</body>
+    <%= render 'layouts/top_bar' %>
+
+    <%= render 'layouts/header' %>
+
+    <section id="main" role="main">
+      <div class="container text-center">
+          <%= yield %>
+      </div>
+    </section>
+
+    <%= render 'layouts/footer' %>
+  </body>
 </html>
